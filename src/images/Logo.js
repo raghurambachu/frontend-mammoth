@@ -1,0 +1,27 @@
+import React from "react";
+
+function Logo() {
+  return (
+    <svg
+      id="Layer_1"
+      x="0px"
+      y="0px"
+      width="200px"
+      height="200px"
+      viewBox="0 0 200 200"
+      enableBackground="new 0 0 200 200"
+      xmlSpace="preserve"
+    >
+      <image
+        id="image0"
+        width={45}
+        height={45}
+        x={0}
+        y={0}
+        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABjFBMVEX////19vbt9PLk8u3e 8Orb7+ji8ez09vXz9vXV7uWf4Mhk0ak8x5QhwIYZvoETvH4RvH0XvYBAyJa45tXo8++a38ZByJcN u3sCuHULunqr487s9PGP3MAkwYcgwIW96Ng0xZADuHXB6drx9fSG2rsMu3ut5NBi0ais48/v9PNV zaHz9fWS3cHK698Mu3qm4swyxI+559Zg0Kfv9fPH6t2U3cJu1K5SzZ/09vZGyZk+x5U9x5QGuXdK ypt817aC2blh0KcVvX8tw4xx1LCF2ruD2bpm0qocv4Mdv4PA6dqJ2rzp8+9dz6YIuXjn8u8owols 066J2r0HuXij4cq05dMev4Tp8/DN7OFq062659ciwIbr8/HS7eQEuHZIypp21rPG6t0rw4vu9PLY 7+YKunmA2Liu5NDm8u4avoIuw4wPu3yM274EuXbP7eJXzqLg8euI2rwYvoEFuXYwxI286Ngfv4QU vX9/2Lfw9fTw9fPJ69+p482w5NHS7eOp486r48/D6dy759eq48625tQRG3BgAAAAAWJLR0QAiAUd SAAAAAd0SU1FB+QLCgojIj8ykRIAAAJzSURBVHja7dzXUxNRGIbxkGAMJqKC6CI2XFQ09goiKvaC DVQUxY5dsffuP665QHezOTh78Z15Z+d5rt/JOb9JLjMnlyOyqSkjAVELiFpA1AKiFhC1gKgFRC0g agFRC4haQNQCohYQtYCoBUQtIGoBUQuIWkDUAqIWELWATJcvNM8yqDjbI6TUMqdcmds6b75BC9ra fUEWdixaHBjWucQLpGvpMktFreV5D5AVK7utHUGwyhwS9qy2ZwTBGmtIfq2Hr+NPvcaQdeu9MMwh 1bInhzVkg5/flTlk4yZfDltI2ObNYQvZ7M9hCgm3ZASy1aPDFLItI5DtrRmB7PDpsITszApkV1Yg uzMC6evPCKS0JyuQASBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECD/2ju4r6fW/gND/7nhwUOH a8MjR48pQo6f+LsrDs4IPhlOD08N60FOR/+ne+bsDPc7F/lvcr4iB6lUo8vz7uFIS3Q4Kgcpx5YX 3MOLl6LDMTnI5djyins4fjU6vDYBBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAANGG 9F13n3ojtrzpHt66HR3euetepnqFLt0LA5POQyfuxYb3HziXw7Fh/qFz+KhgBymOu07tr3sw7vET x3BoLD4cHXEMuydTXS3lAy9PBxqe2/lsqm4YPn/RaPjy1eu6YbXjTcN3rt6+e28JafrwsfdTos9f SsnlVPvXxPDb967ksPDjZ/IjfzWnvBhPgKoFRC0gagFRC4haQNQCohYQtYCoBUQtIGoBUQuIWkDU AqIWELWAqAVELSBqAVELiFpA1MoR2fQbGIqyhSP+IwEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAt MTEtMTBUMTA6MzU6MzQrMDM6MDCzDtaCAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTExLTEwVDEw OjM1OjM0KzAzOjAwwlNuPgAAAABJRU5ErkJggg=="
+      />
+    </svg>
+  );
+}
+
+export default Logo;

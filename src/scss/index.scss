@@ -1,0 +1,193 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+.data-table-wrapper {
+  height: 23vh !important;
+  overflow-y: scroll;
+  -moz-box-shadow: inset 0 -15px 15px -15px #949292;
+  -webkit-box-shadow: inset 0 -15px 15px -15px #949292;
+  box-shadow: inset 0 -15px 15px -15px #949292;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  width: 8px;
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: #c5c3c3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #adadad;
+}
+
+::-webkit-scrollbar-button {
+  height: 50px;
+}
+
+// Toggler Switch
+// Took refernce from [https://codepen.io/billyysea/pen/CHmiE]
+.wrap {
+  left: 50%;
+  transform: translate(-1.8em, -0.5em);
+}
+.slider-input {
+  display: none;
+}
+
+// ********** Background:
+.slider {
+  position: relative;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+// ********** Switch:
+.slider::after {
+  position: absolute;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  top: 0.5em;
+  transform: translateY(-0.75em);
+  left: 0.5em;
+  border-radius: 50%;
+  transition: 250ms ease-in-out;
+  background: linear-gradient(#f5f5f5 10%, #eee);
+  box-shadow: 0 0.1em 0.15em -0.05em rgba(#fff, 0.9) inset,
+    0 0.2em 0.2em -0.12em rgba(#000, 0.5);
+}
+
+// ********** Channel:
+.slider::before {
+  position: absolute;
+  content: "";
+  width: 3em;
+  height: 1.2em;
+  top: 0.75em;
+  transform: translateY(-0.75em);
+  left: 0.75em;
+  border-radius: 0.75em;
+  transition: 250ms ease-in-out;
+  background: linear-gradient(rgba(#000, 0.07), rgba(#fff, 0.1)), #d0d0d0;
+  box-shadow: 0 0.08em 0.15em -0.1em rgba(#000, 0.5) inset,
+    0 0.05em 0.08em -0.01em rgba(#fff, 0.7), 0 0 0 0 rgba(#4c6, 0.7) inset;
+}
+
+.slider-input:checked + .slider::before {
+  box-shadow: 0 0.08em 0.15em -0.1em rgba(#000, 0.5) inset,
+    0 0.05em 0.08em -0.01em rgba(#fff, 0.7), 3em 0 0 0 rgba(#4c6, 0.7) inset;
+}
+
+.slider-input:checked + .slider::after {
+  left: 2.5em;
+}
+
+// green dots
+.left-dot {
+  left: 33%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-dot {
+  left: 67%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.green-line {
+  width: 34%;
+  // border-top: 1px solid #48bb78;
+  height: 1px;
+  left: 33%;
+}
+
+.branch-out-table {
+  height: 45vh;
+  overflow-y: scroll;
+}
+
+// Green Checkbox
+// Have'nt built by myself rather modified as per need[http://jsfiddle.net/5g3w32ug/]
+.filters {
+  input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 1.5ex;
+    height: 0.8ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.5ex;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    background-color: #48bb78;
+  }
+
+  input[type="checkbox"] {
+    line-height: 2.1ex;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 1rem;
+    width: 1rem;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 0.5em;
+  }
+}
+
+.show-details {
+  top: -400%;
+  width: 820px;
+  transform: translateX(-43.5%);
+
+  &::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    background-color: red;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    bottom: -5%;
+    left: 50%;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
