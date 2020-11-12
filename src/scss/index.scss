@@ -34,87 +34,96 @@ body {
   height: 50px;
 }
 
-// Toggler Switch
-// Took refernce from [https://codepen.io/billyysea/pen/CHmiE]
-.wrap {
-  left: 50%;
-  transform: translate(-1.8em, -0.5em);
-}
-.slider-input {
-  display: none;
-}
+.branch-out-dataset {
+  .dashed-green-line {
+    width: 90%;
+  }
 
-// ********** Background:
-.slider {
-  position: relative;
-  cursor: pointer;
-  transition: 350ms;
-}
+  .dashed-line-arrow {
+    top: 25%;
+  }
 
-// ********** Switch:
-.slider::after {
-  position: absolute;
-  content: "";
-  width: 1.5em;
-  height: 1.5em;
-  top: 0.5em;
-  transform: translateY(-0.75em);
-  left: 0.5em;
-  border-radius: 50%;
-  transition: 250ms ease-in-out;
-  background: linear-gradient(#f5f5f5 10%, #eee);
-  box-shadow: 0 0.1em 0.15em -0.05em rgba(#fff, 0.9) inset,
-    0 0.2em 0.2em -0.12em rgba(#000, 0.5);
-}
+  // Toggler Switch
+  // Took refernce from [https://codepen.io/billyysea/pen/CHmiE]
+  .wrap {
+    left: 50%;
+    transform: translate(-1.8em, -0.5em);
+  }
+  .slider-input {
+    display: none;
+  }
 
-// ********** Channel:
-.slider::before {
-  position: absolute;
-  content: "";
-  width: 3em;
-  height: 1.2em;
-  top: 0.75em;
-  transform: translateY(-0.75em);
-  left: 0.75em;
-  border-radius: 0.75em;
-  transition: 250ms ease-in-out;
-  background: linear-gradient(rgba(#000, 0.07), rgba(#fff, 0.1)), #d0d0d0;
-  box-shadow: 0 0.08em 0.15em -0.1em rgba(#000, 0.5) inset,
-    0 0.05em 0.08em -0.01em rgba(#fff, 0.7), 0 0 0 0 rgba(#4c6, 0.7) inset;
-}
+  // ********** Background:
+  .slider {
+    position: relative;
+    cursor: pointer;
+    transition: 350ms;
+  }
 
-.slider-input:checked + .slider::before {
-  box-shadow: 0 0.08em 0.15em -0.1em rgba(#000, 0.5) inset,
-    0 0.05em 0.08em -0.01em rgba(#fff, 0.7), 3em 0 0 0 rgba(#4c6, 0.7) inset;
-}
+  // ********** Switch:
+  .slider::after {
+    position: absolute;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    top: 0.5em;
+    transform: translateY(-0.75em);
+    left: 0.5em;
+    border-radius: 50%;
+    transition: 250ms ease-in-out;
+    background: linear-gradient(#f5f5f5 10%, #eee);
+    box-shadow: 0 0.1em 0.15em -0.05em rgba(#fff, 0.9) inset,
+      0 0.2em 0.2em -0.12em rgba(#000, 0.5);
+  }
 
-.slider-input:checked + .slider::after {
-  left: 2.5em;
-}
+  // ********** Channel:
+  .slider::before {
+    position: absolute;
+    content: "";
+    width: 3em;
+    height: 1.2em;
+    top: 0.75em;
+    transform: translateY(-0.75em);
+    left: 0.75em;
+    border-radius: 0.75em;
+    transition: 250ms ease-in-out;
+    background: linear-gradient(rgba(#000, 0.07), rgba(#fff, 0.1)), #d0d0d0;
+    box-shadow: 0 0.08em 0.15em -0.1em rgba(#000, 0.5) inset,
+      0 0.05em 0.08em -0.01em rgba(#fff, 0.7), 0 0 0 0 rgba(#4c6, 0.7) inset;
+  }
 
-// green dots
-.left-dot {
-  left: 33%;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .slider-input:checked + .slider::before {
+    box-shadow: 0 0.08em 0.15em -0.1em rgba(#000, 0.5) inset,
+      0 0.05em 0.08em -0.01em rgba(#fff, 0.7), 3em 0 0 0 rgba(#4c6, 0.7) inset;
+  }
 
-.right-dot {
-  left: 67%;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .slider-input:checked + .slider::after {
+    left: 2.5em;
+  }
 
-.green-line {
-  width: 34%;
-  // border-top: 1px solid #48bb78;
-  height: 1px;
-  left: 33%;
-}
+  // green dots
+  .left-dot {
+    left: 33%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.branch-out-table {
-  height: 45vh;
-  overflow-y: scroll;
+  .right-dot {
+    left: 67%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .green-line {
+    width: 34%;
+    height: 1px;
+    left: 33%;
+  }
+
+  .branch-out-table {
+    height: 45vh;
+    overflow-y: scroll;
+  }
 }
 
 // Green Checkbox

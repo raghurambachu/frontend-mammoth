@@ -1,10 +1,11 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import BranchOutDatasetTableRow from "./BranchOutDatasetTableRow";
+import Checkbox from "./Checkbox";
 
 function BranchOutDatasetTable(props) {
   return (
-    <div className="w-1/2 bg-white rounded-sm shadow-sm">
+    <div className="w-1/2 bg-white rounded-sm shadow-sm relative">
       <div className="flex px-4 py-2 space-x-4 text-xs text-gray-500 ">
         <div className="inline-flex items-center w-1/4 text-gray-500 ">
           <input
@@ -17,13 +18,23 @@ function BranchOutDatasetTable(props) {
         </div>
         <span className="self-center cursor-pointer "> Select all</span>
         <span className="self-center cursor-pointer "> Deselect all</span>
+        {props.addDataset && (
+          <div className="self-center flex space-x-2 absolute right-0 pr-16 filters">
+            <Checkbox id="3" label="Include hidden columns" />
+          </div>
+        )}
       </div>
       <div className="relative branch-out-table">
         <table className="text-xs table-fixed ">
           <thead className="text-left">
             <tr>
               <th className="w-1/4 px-4 py-2 text-xs">This Dataset</th>
-              <th colSpan="2" className="w-1/2 px-4 py-2"></th>
+              <th colSpan="2" className="w-1/2 px-4 py-2  relative ">
+                <span className="inline-block h-2 w-full border-t-2 border-green-500 border-dashed absolute dashed-green-line"></span>
+                <span className="absolute text-green-500 dashed-line-arrow right-0">
+                  &gt;
+                </span>
+              </th>
               <th className="w-1/4 px-4 py-2 text-xs">
                 Destination: Dataset Name
               </th>

@@ -13,7 +13,7 @@ function Dropdown(props) {
             aria-haspopup="true"
             aria-expanded="true"
           >
-            <span className={`mr-8 ${props.setWidth}`}>{props.title}</span>
+            <span className={`mr-8 ${props.setClass}`}>{props.title}</span>
 
             <GoTriangleDown className="ml-4" />
           </button>

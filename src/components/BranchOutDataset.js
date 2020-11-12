@@ -20,7 +20,10 @@ function BranchOutDataset() {
           <IoIosGitBranch size={14} />
           <h3 className="mx-4 font-semibold"> Branch Out to Dataset</h3>
         </div>
-        <IoMdClose className="font-light text-gray-800" size={20} />
+        <IoMdClose
+          className="font-light text-gray-800 cursor-pointer "
+          size={20}
+        />
       </div>
       <div className="my-4 dropdowns flex items-center">
         <Dropdown title="Create new Dataset" />

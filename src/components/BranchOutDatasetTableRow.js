@@ -46,7 +46,7 @@ function BranchOutDatasetTableRow(props) {
 
       {props.addDataset ? (
         <td>
-          <Dropdown setClass="p-0 ml-4 text-xs" title="--Create column--" />
+          <Dropdown setClass="p-0 ml-5 text-xs w-24 " title="Create column" />
         </td>
       ) : (
         <td className="flex px-4 py-2">
